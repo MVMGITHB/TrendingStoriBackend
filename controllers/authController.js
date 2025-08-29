@@ -53,11 +53,11 @@ export const registerUser = async (req, res) => {
 // @route  POST /api/auth/login
 // @access Public
 export const loginUser = async (req, res) => {
-  const { identifier, password } = req.body; // identifier can be email or phone
+  const { email, password } = req.body; // identifier can be email or phone
 
   try {
     const user = await User.findOne({
-      $or: [{ email: identifier }, { phone: identifier }],
+       email: email 
     });
 
     if (user && (await user.matchPassword(password))) {
