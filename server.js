@@ -23,7 +23,9 @@ const allowedOrigins = new Set([
   "http://82.25.109.68:3005",
   "http://82.25.109.68:3005/",
   "https://dailynewzmail.com/",
-  "https://dailynewzmail.com"
+  "https://dailynewzmail.com",
+  "https://trendingstori.com/",
+  "https://trendingstori.com"
 
 ]);
 
